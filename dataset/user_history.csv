@@ -1,0 +1,44 @@
+user_id,past_claim_count,accept_claim,manual_review_claim,rejected_claim,last_90_days_claim_count,history_flags,history_summary
+user_001,2,2,0,0,1,none,Two accepted claims. Low risk.
+user_002,4,3,0,1,2,none,Three accepted and one rejected. Moderate history.
+user_003,1,1,0,0,0,none,One accepted claim. Low risk.
+user_004,5,2,2,1,3,user_history_risk,Frequent claimant with mixed results. Requires review.
+user_005,6,2,1,3,4,user_history_risk,High rejection rate. Multiple recent claims flagged.
+user_006,1,0,1,0,1,manual_review_required,Single claim sent to manual review.
+user_007,2,2,0,0,1,none,Two accepted claims. Low risk.
+user_008,3,1,1,1,2,user_history_risk;manual_review_required,Mixed history with one manipulation flag.
+user_009,1,1,0,0,0,none,Single accepted claim. Low risk.
+user_010,2,2,0,0,1,none,Two accepted claims. Low risk.
+user_011,3,2,1,0,1,none,Two accepted and one manual review.
+user_012,1,1,0,0,0,none,Single accepted claim. Low risk.
+user_013,2,1,0,1,1,none,One accepted and one rejected.
+user_014,4,3,0,1,2,none,Moderate history. Mostly accepted.
+user_015,1,1,0,0,0,none,Single accepted claim. Low risk.
+user_016,3,2,0,1,1,none,Two accepted one rejected.
+user_017,2,2,0,0,0,none,Two accepted claims. Low risk.
+user_018,5,3,1,1,3,user_history_risk,High frequency claimant. Requires attention.
+user_019,2,1,0,1,1,none,One accepted one rejected.
+user_020,3,1,2,0,2,user_history_risk;manual_review_required,Two prior manual reviews. Pattern of edge-case claims.
+user_022,2,2,0,0,1,none,Two accepted claims. Low risk.
+user_025,2,2,0,0,1,none,Two accepted claims. Low risk.
+user_026,1,1,0,0,0,none,Single accepted claim.
+user_027,3,2,0,1,2,none,Two accepted one rejected.
+user_028,1,1,0,0,0,none,Single accepted claim.
+user_029,2,2,0,0,1,none,Two accepted claims.
+user_030,6,4,1,1,3,user_history_risk,Frequent claimant with mostly accepted but one review.
+user_031,4,3,1,0,2,none,Multiple accepted with one review.
+user_032,3,1,1,1,2,user_history_risk;manual_review_required,Mixed history. Contents claims often unverified.
+user_033,5,2,2,1,3,user_history_risk;manual_review_required,Frequent claimant. Prior exaggeration flags.
+user_034,4,2,1,1,3,user_history_risk;manual_review_required,Multiple recent claims with text instruction risk.
+user_036,3,1,0,2,3,user_history_risk,Two rejections. Recent instruction injection attempt.
+user_037,5,3,0,2,4,user_history_risk,Two rejections. Escalation language noted.
+user_038,2,1,0,1,1,none,One accepted one rejected.
+user_039,1,1,0,0,0,none,Single accepted claim.
+user_040,7,3,1,3,5,user_history_risk;manual_review_required,High rejection rate. Multiple escalation attempts.
+user_041,3,2,0,1,2,none,Two accepted one rejected.
+user_042,3,2,0,1,2,none,Two accepted one rejected.
+user_043,1,1,0,0,0,none,Single accepted claim.
+user_044,2,1,0,1,1,none,One accepted one rejected.
+user_045,4,3,0,1,2,none,Three accepted one rejected.
+user_046,2,2,0,0,1,none,Two accepted claims.
+user_047,1,1,0,0,0,none,Single accepted claim.

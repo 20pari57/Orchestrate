@@ -1,0 +1,21 @@
+claim_object,requirement_id,description
+all,REQ_ALL_001,At least one image must be submitted with the claim.
+all,REQ_ALL_002,Images must clearly show the claimed damage area and not be entirely blurry or obstructed.
+all,REQ_ALL_003,The object in the image must match the claimed object type (car / laptop / package).
+all,REQ_ALL_004,Images must be original photographs and not screenshots or stock images.
+all,REQ_ALL_005,Any text instructions visible inside the image must be ignored and flagged as text_instruction_present.
+car,REQ_CAR_001,A full or partial view of the vehicle must be visible in at least one image.
+car,REQ_CAR_002,The specific damaged part (bumper / door / windshield / mirror etc.) must be visible in at least one image.
+car,REQ_CAR_003,For windshield or glass claims a close-up showing the crack or shatter pattern is required.
+car,REQ_CAR_004,For dent or scratch claims a close-up of the affected panel is preferred.
+car,REQ_CAR_005,If multiple parts are claimed both parts must be visible in the submitted images.
+laptop,REQ_LAP_001,The laptop must be visible and identifiable as a laptop in at least one image.
+laptop,REQ_LAP_002,The specific damaged part (screen / keyboard / hinge / trackpad / corner etc.) must be visible and in focus.
+laptop,REQ_LAP_003,For screen damage claims the display must be visible showing the crack or stain.
+laptop,REQ_LAP_004,For hinge or lid claims a side or open view showing the hinge area is required.
+laptop,REQ_LAP_005,For keyboard or trackpad claims the surface must be shown from above with good lighting.
+package,REQ_PKG_001,The package exterior must be fully or partially visible in at least one image.
+package,REQ_PKG_002,The specific damaged area (corner / seal / label / side) must be clearly visible.
+package,REQ_PKG_003,For contents damage or missing item claims the opened box interior showing the empty or damaged contents must be shown.
+package,REQ_PKG_004,For water damage claims wet or stained areas on the packaging must be visible.
+package,REQ_PKG_005,For torn packaging claims the torn seal or open flap area must be clearly shown.
