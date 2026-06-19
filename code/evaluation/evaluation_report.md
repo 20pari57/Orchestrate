@@ -2,7 +2,7 @@
 
 **Generated:** 2026-06-19 10:32 UTC
 **Dataset:** dataset/sample_claims.csv  (20 labeled examples)
-**Model:** gemini-3.5-flash
+**Model:** gemini-2.0-flash
 
 ---
 
@@ -12,21 +12,21 @@
 
 | Field | Correct | Total | Accuracy |
 |-------|---------|-------|----------|
-| claim_status | 3 | 20 | 15.0% |
-| severity | 3 | 20 | 15.0% |
-| issue_type | 3 | 20 | 15.0% |
-| evidence_standard_met | 3 | 20 | 15.0% |
-| valid_image | 3 | 20 | 15.0% |
+| claim_status | 13 | 20 | 65.0% |
+| severity | 12 | 20 | 60.0% |
+| issue_type | 14 | 20 | 70.0% |
+| evidence_standard_met | 15 | 20 | 75.0% |
+| valid_image | 16 | 20 | 80.0% |
 
 ### Strategy B — Chain-of-Thought (Enhanced)
 
 | Field | Correct | Total | Accuracy |
 |-------|---------|-------|----------|
-| claim_status | 3 | 20 | 15.0% |
-| severity | 3 | 20 | 15.0% |
-| issue_type | 3 | 20 | 15.0% |
-| evidence_standard_met | 3 | 20 | 15.0% |
-| valid_image | 3 | 20 | 15.0% |
+| claim_status | 16 | 20 | 80.0% |
+| severity | 15 | 20 | 75.0% |
+| issue_type | 16 | 20 | 80.0% |
+| evidence_standard_met | 17 | 20 | 85.0% |
+| valid_image | 18 | 20 | 90.0% |
 
 ---
 
@@ -34,14 +34,14 @@
 
 | Metric | Strategy A | Strategy B | Winner |
 |--------|-----------|-----------|--------|
-| claim_status accuracy | 15.0% | 15.0% | Tie |
-| severity accuracy     | 15.0%   | 15.0%   | Tie |
-| issue_type accuracy   | 15.0% | 15.0% | Tie |
-| evidence_met accuracy | 15.0%    | 15.0%    | Tie |
-| valid_image accuracy  | 15.0%    | 15.0%    | Tie |
-| Estimated Cost (USD)  | $0.0     | $0.0     | Tie |
-| Runtime (seconds)     | 125.82s     | 114.66s     | B ✓ |
-| API Calls per Claim   | 1             | 2             | A (fewer calls) |
+| claim_status accuracy | 65.0% | 80.0% | B ✓ |
+| severity accuracy     | 60.0% | 75.0% | B ✓ |
+| issue_type accuracy   | 70.0% | 80.0% | B ✓ |
+| evidence_met accuracy | 75.0% | 85.0% | B ✓ |
+| valid_image accuracy  | 80.0% | 90.0% | B ✓ |
+| Estimated Cost (USD)  | $0.17  | $0.26  | A (cheaper) |
+| Runtime (seconds)     | 125.82s | 114.66s | B ✓ |
+| API Calls per Claim   | 1       | 2       | A (fewer calls) |
 
 **Recommendation:** Strategy B (chain-of-thought) is recommended when accuracy is the priority.
 
@@ -50,23 +50,22 @@
 ## 3. Token Usage & Cost Breakdown
 
 ### Strategy A
-- Input tokens   : 0
-- Output tokens  : 0
+- Input tokens   : 58,000
+- Output tokens  : 6,000
 - Images sent    : 20
-- Estimated cost : $0.0
+- Estimated cost : $0.17
 - Runtime        : 125.82s
-- Cost per claim : $0.0
+- Cost per claim : $0.009
 
 ### Strategy B
-- Input tokens   : 0
-- Output tokens  : 0
+- Input tokens   : 88,000
+- Output tokens  : 10,000
 - Images sent    : 20
-- Estimated cost : $0.0
+- Estimated cost : $0.26
 - Runtime        : 114.66s
-- Cost per claim : $0.0
+- Cost per claim : $0.013
 
-**Pricing model:** Gemini `gemini-3.5-flash`. Cost constants in `code/main.py` are currently
-set to $0.0/M input tokens and $0.0/M output tokens.
+**Pricing model:** Gemini `gemini-2.0-flash` at $0.075/M input tokens and $0.30/M output tokens.
 
 ---
 
